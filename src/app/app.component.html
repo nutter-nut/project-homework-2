@@ -1,0 +1,25 @@
+<div>
+    <div class="suphachai-dev">
+        <div>
+            <p>
+                <mat-toolbar style="justify-content: center;margin-top: -1rem;border-radius: 1rem;">
+                    <button mat-flat-button style="background-color: #81c784;color: #fff;" [routerLink]="['/about']">About Me</button>
+                    <button mat-flat-button style="background-color: #35afea;color: #fff;" [routerLink]="['/skill']">Skill</button>
+                    <button mat-flat-button style="background-color: #f381a7;color: #fff;" [routerLink]="['/contact']">Contact Me</button>
+                    <button mat-flat-button style="background-color: #fddf5d;color: #fff;" [routerLink]="['/portfolio']">Portfolio Me</button>
+
+                </mat-toolbar>
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                <mat-toolbar style="margin-top: -1rem;margin-bottom: -1rem;border-radius: 1rem;height: 296px;">
+                    <router-outlet></router-outlet>
+                </mat-toolbar>
+            </p>
+            <mat-toolbar style="margin-top: -5rem;border-radius: 1rem;padding-left: 30rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png" style="width: 50px;">
+            </mat-toolbar>
+        </div>
+    </div>
+</div>
